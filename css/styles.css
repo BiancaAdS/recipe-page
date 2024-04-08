@@ -1,0 +1,49 @@
+@font-face {
+  font-family: "Outfit";
+  src: url(../assets/fonts/static/InterOutfit-Regular.ttf), local("Outfit");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Outfit";
+  src: url(../assets/fonts/static/Outfit-Bold.ttf), local("Outfit");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Outfit";
+  src: url(../assets/fonts/static/Outfit-SemiBold.ttf), local("Outfit");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "YoungSerif";
+  src: url(../assets/fonts/static/YoungSerif-Regular.ttf), local("YoungSerif");
+  font-weight: normal;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-spacing: 0;
+
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100vh;
+  background-color: hsl(0, 0%, 8%);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
