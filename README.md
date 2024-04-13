@@ -28,7 +28,7 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 ### Links
 
 - Solution URL: [Solution URL](https://github.com/BiancaAdS/recipe-page)
-- Live Site URL: [Live site URL]()
+- Live Site URL: [Live site URL](https://recipe-page-tau-inky.vercel.app/)
 
 ## My process
 
