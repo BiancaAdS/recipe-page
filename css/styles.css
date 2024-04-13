@@ -1,24 +1,25 @@
 @font-face {
-  font-family: "Outfit";
-  src: url(../assets/fonts/static/InterOutfit-Regular.ttf), local("Outfit");
+  font-family: "Outfit"; /*TODO O TEXTO*/
+  src: url(../assets/fonts/outfit/static/Outfit-Regular.ttf), local("Outfit");
   font-weight: normal;
 }
 
 @font-face {
   font-family: "Outfit";
-  src: url(../assets/fonts/static/Outfit-Bold.ttf), local("Outfit");
+  src: url(../assets/fonts/outfit/static/Outfit-Bold.ttf), local("Outfit");
   font-weight: bold;
 }
 
 @font-face {
   font-family: "Outfit";
-  src: url(../assets/fonts/static/Outfit-SemiBold.ttf), local("Outfit");
+  src: url(../assets/fonts/outfit/static/Outfit-SemiBold.ttf), local("Outfit");
   font-weight: 600;
 }
 
 @font-face {
-  font-family: "YoungSerif";
-  src: url(../assets/fonts/static/YoungSerif-Regular.ttf), local("YoungSerif");
+  font-family: "YoungSerif"; /*TITULOS*/
+  src: url(../assets/fonts/young-serif/YoungSerif-Regular.ttf),
+    local("YoungSerif");
   font-weight: normal;
 }
 
@@ -29,7 +30,7 @@
   border: 0;
   border-spacing: 0;
 
-  font-family: "Inter", sans-serif;
+  font-family: "Outfit", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
 }
@@ -40,10 +41,223 @@ html {
 
 body {
   min-height: 100vh;
-  background-color: hsl(0, 0%, 8%);
+  background-color: hsl(30, 54%, 90%);
 
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+}
+
+.content-box {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(30, 18%, 87%);
+
+  border-radius: 18px;
+
+  width: 50%;
+  margin: 10% 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.box-img {
+  padding-left: 42px;
+  padding-right: 42px;
+  margin-top: 42px;
+}
+
+.content-img {
+  border-radius: 12px;
+  width: 100%;
+}
+
+.info-recipe-box h1,
+.content-recipe div {
+  margin: 20px 0;
+}
+
+.title {
+  font-family: "YoungSerif", sans-serif;
+  color: hsl(24, 5%, 18%);
+  font-weight: normal;
+}
+
+.description-recipe-text {
+  font-family: "Outfit", sans-serif;
+  color: hsl(30, 10%, 34%);
+  font-weight: normal;
+}
+
+.preparation-box {
+  width: 100%;
+  border-radius: 12px;
+  background-color: hsl(330, 100%, 98%);
+}
+
+.preparation-content {
+  color: hsl(30, 10%, 34%);
+}
+
+.preparation-content h3 {
+  color: hsl(332, 51%, 32%);
+}
+
+.preparation-content ul {
+  list-style: none;
+}
+
+.preparation-content li {
+  margin: 12px 0;
+}
+
+.preparation-content li::before {
+  content: "•";
+  margin-right: 2%;
+  color: hsl(332, 51%, 32%);
+}
+
+.ingredients-box {
+  width: 100%;
+  color: hsl(30, 10%, 34%);
+}
+
+.ingredients-box h2,
+.instructions-box h2,
+.nutrition-box h2 {
+  color: hsl(14, 45%, 36%);
+}
+
+.ingredients-box ul {
+  list-style: none;
+}
+
+.ingredients-box li {
+  margin: 12px 0;
+}
+
+.ingredients-box li::before {
+  content: "• ";
+  margin-right: 28px;
+  color: hsl(30, 10%, 34%);
+}
+
+.instructions-box ol {
+  margin-left: 4%;
+  color: hsl(30, 10%, 34%);
+}
+
+.instructions-box li {
+  margin-bottom: 14px;
+  padding-left: 14px;
+}
+
+.instructions-box li::marker {
+  font-weight: 600;
+  color: hsl(14, 45%, 36%);
+}
+
+.nutrition-box {
+  width: 100%;
+  color: hsl(30, 10%, 34%);
+}
+
+.nutrition-box p {
+  margin: 20px 0;
+}
+.nutrition-box table {
+  width: 100%;
+
+  border-spacing: 0 12px;
+}
+
+.nutrition-box tr {
+  border: 1px solid;
+  border-color: transparent transparent hsl(30, 18%, 87%) transparent;
+}
+
+.nutrition-box td:nth-last-of-type(n) {
+  border: 1px solid;
+  border-color: transparent transparent hsl(30, 18%, 87%) transparent;
+
+  padding: 0 32px;
+  padding-bottom: 10px;
+}
+
+.nutrition-box td:nth-child(even) {
+  font-weight: 600;
+  color: hsl(14, 45%, 36%);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.pd-22 {
+  padding: 22px;
+}
+
+.pd-42 {
+  padding: 42px;
+}
+
+.mg-lf-6 {
+  margin-left: 6px;
+}
+
+.mg-bt-20 {
+  margin-bottom: 20px;
+}
+
+.pd-tp-0 {
+  padding-top: 0px;
+}
+
+.mg-tp-0 {
+  margin-top: 0px;
+}
+
+@media screen and (max-width: 1032px) {
+  .content-box {
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .content-box {
+    margin: 0;
+    width: 100%;
+    padding-top: 0;
+    border-radius: 0;
+
+    min-height: 100vh;
+  }
+
+  .content-box:nth-child(1 of img) {
+    padding: 0px;
+  }
+
+  .content-box div:first-child {
+    margin-top: 0px;
+  }
+
+  .content-img {
+    border-radius: 0;
+  }
+
+  .box-img {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .no-footer {
+    display: none;
+  }
 }
